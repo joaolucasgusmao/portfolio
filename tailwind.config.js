@@ -1,3 +1,5 @@
+const { title } = require('process');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,8 +9,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+      title: ["Poppins", "sans-serif"]
+      },
       backgroundColor: {
-        "black-1": "#171923",
+        "black-1": "#13151D",
         "black-2": "#252A37"
       },
       colors: {
