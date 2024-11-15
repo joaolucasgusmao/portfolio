@@ -12,8 +12,8 @@ const SideMenu = ({ closeMenu }: SideMenuProps) => {
           <Image
             src={"/logo.png"}
             alt="Logo do site"
-            width={70}
-            height={40}
+            width={60}
+            height={60}
             className="object-contain"
           />
         </div>
