@@ -1,10 +1,13 @@
 import Image from "next/image";
-import { useState } from "react";
 import SideMenu from "./SideMenu";
 
-const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
-
+const Header = ({
+  isMenuOpen,
+  setIsMenuOpen,
+}: {
+  isMenuOpen: boolean;
+  setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -20,7 +23,7 @@ const Header = () => {
           Tec's
         </a>
         <a className="text-orange font-title text-base font-semibold" href="#">
-          Meu CV
+          Contato
         </a>
       </div>
       <button onClick={toggleMenu} className="sm:hidden">

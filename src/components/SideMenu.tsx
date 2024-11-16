@@ -34,7 +34,7 @@ const SideMenu = ({ closeMenu }: SideMenuProps) => {
           Tec's
         </a>
         <a className="text-orange font-title text-base font-semibold" href="#">
-          Meu CV
+          Contato
         </a>
       </div>
     </div>
