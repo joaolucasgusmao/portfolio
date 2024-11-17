@@ -2,6 +2,7 @@ import { Projects } from "@/types";
 
 const projects: Projects[] = [
   {
+    id: 1,
     name: "Fashion Store",
     description:
       "Aplicação de e-commerce simulada para a compra e gestão de roupas, com funcionalidades de cadastro, login e gerenciamento de produtos",
@@ -10,6 +11,7 @@ const projects: Projects[] = [
     deploy: "https://fashion-storee.vercel.app/",
   },
   {
+    id: 2,
     name: "Devs hub",
     description:
       "Plataforma para desenvolvedores registrarem e compartilharem suas stacks tecnológicas",
@@ -18,6 +20,7 @@ const projects: Projects[] = [
     deploy: "https://deevshub.vercel.app/",
   },
   {
+    id: 3,
     name: "Burguer Shot",
     description:
       "Aplicação de fast-food simulada para gerenciar pedidos e exibir produtos",
@@ -26,6 +29,7 @@ const projects: Projects[] = [
     deploy: "https://burguershot.vercel.app/",
   },
   {
+    id: 4,
     name: "Control Finance",
     description:
       "Plataforma de gerenciamento de finanças pessoais com funcionalidades de controle de despesas e receitas",
@@ -34,6 +38,7 @@ const projects: Projects[] = [
     deploy: "https://controlfinancee.vercel.app/",
   },
   {
+    id: 5,
     name: "Cars API",
     description: "API para gerenciamento de veículos, com testes automatizados",
     techs: [
