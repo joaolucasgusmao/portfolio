@@ -1,4 +1,5 @@
 import AboutMe from "@/components/AboutMe";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import { useState } from "react";
@@ -10,9 +11,10 @@ const Home = () => {
     <>
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="flex justify-center items-center m-8 mt-32 flex-col gap-4">
-        <AboutMe isMenuOpen={isMenuOpen} />
+        <AboutMe />
         <Projects />
       </main>
+      <Footer />
     </>
   );
 };
