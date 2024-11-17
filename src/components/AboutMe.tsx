@@ -7,7 +7,7 @@ import Typewriter from "typewriter-effect";
 
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center">
+    <section className="flex flex-col items-center">
       <Image
         className="rounded-50 w-48 h-42"
         src="/avatar.png"
@@ -55,7 +55,7 @@ const AboutMe = () => {
           <IoMailOutline className="text-white text-2xl" />
         </a>
       </div>
-    </div>
+    </section>
   );
 };
 
