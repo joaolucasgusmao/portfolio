@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { CgSoftwareDownload } from "react-icons/cg";
+
 import Typewriter from "typewriter-effect";
 
 const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
@@ -33,7 +35,6 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           )}
         </h2>
       </div>
-
       <div className="flex flex-col w-full gap-3 mt-2">
         <p className="text-white text-sm w-full text-center font-medium">
           Sou Desenvolvedor apaixonado por tecnologia e programação, com sólida
@@ -41,31 +42,21 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           PHP e Laravel.
         </p>
       </div>
-
       <div className="flex flex-row gap-4 mt-4">
-        <a target="_blank" href="https://github.com/joaolucasgusmao">
-          <FaGithub className="text-white text-2xl" />
-        </a>
         <a target="_blank" href="https://www.linkedin.com/in/joaoolucasgusmao/">
           <FaLinkedin className="text-white text-2xl cursor-pointer" />
         </a>
+        <a
+          href="https://drive.google.com/uc?export=download&id=1Q55Ck_8Ik8tTyI_vTB4uhPKS43AZahRN"
+          download
+          className="h-fit w-fit"
+        >
+          <CgSoftwareDownload className="text-white text-2xl cursor-pointer" />
+        </a>
+        <a target="_blank" href="https://github.com/joaolucasgusmao">
+          <FaGithub className="text-white text-2xl" />
+        </a>
       </div>
-
-      {/* <a
-        href="https://drive.google.com/uc?export=download&id=1Q55Ck_8Ik8tTyI_vTB4uhPKS43AZahRN"
-        download
-        className="h-fit w-fit"
-      >
-        <button className="mt-6 text-lg text-orange bg-black-2 py-2 px-6 rounded-md font-semibold flex flex-row gap-2 items-center">
-          Baixar CV
-          <Image
-            src={"/download.svg"}
-            alt="Icone de download"
-            width={17}
-            height={17}
-          />
-        </button>
-      </a> */}
     </div>
   );
 };
