@@ -37,7 +37,7 @@ const projects: Projects[] = [
     name: "Cars API",
     description: "API para gerenciamento de veículos, com testes automatizados",
     techs: [
-      "Node,js",
+      "Node.js",
       "Express.js",
       "TypeScript",
       "Prisma",

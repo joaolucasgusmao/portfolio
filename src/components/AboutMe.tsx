@@ -17,7 +17,7 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
         <h1 className="text-white text-3xl font-semibold">
           Prazer, João Lucas!✋🏻
         </h1>
-        <span className="text-orange text-center font-semibold text-lg">
+        <h2 className="text-orange text-center font-bold text-lg">
           {!isMenuOpen && (
             <Typewriter
               options={{
@@ -31,32 +31,27 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
               }}
             />
           )}
-        </span>
+        </h2>
       </div>
 
       <div className="flex flex-col w-full gap-3 mt-2">
-        <p className="text-white text-base w-full text-center">
-          Sou apaixonado por programação e estou em constante evolução. Estou
-          imerso no mundo do desenvolvimento web, explorando seus aspectos e
-          desafios.
-        </p>
-        <p className="text-white text-base w-full text-center">
-          Cada projeto é uma oportunidade de crescimento, e estou sempre ansioso
-          para aprender e colaborar. Vamos transformar linhas de código em
-          soluções extraordinárias juntos! 🚀
+        <p className="text-white text-sm w-full text-center font-medium">
+          Sou Desenvolvedor apaixonado por tecnologia e programação, com sólida
+          experiência em desenvolvimento de soluções web utilizando React, Node,
+          PHP e Laravel.
         </p>
       </div>
 
       <div className="flex flex-row gap-4 mt-4">
         <a target="_blank" href="https://github.com/joaolucasgusmao">
-          <FaGithub className="text-white text-3xl" />
+          <FaGithub className="text-white text-2xl" />
         </a>
         <a target="_blank" href="https://www.linkedin.com/in/joaoolucasgusmao/">
-          <FaLinkedin className="text-white text-3xl cursor-pointer" />
+          <FaLinkedin className="text-white text-2xl cursor-pointer" />
         </a>
       </div>
 
-      <a
+      {/* <a
         href="https://drive.google.com/uc?export=download&id=1Q55Ck_8Ik8tTyI_vTB4uhPKS43AZahRN"
         download
         className="h-fit w-fit"
@@ -70,7 +65,7 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
             height={17}
           />
         </button>
-      </a>
+      </a> */}
     </div>
   );
 };

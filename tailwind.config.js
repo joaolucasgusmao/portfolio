@@ -15,9 +15,10 @@ module.exports = {
       backgroundColor: {
         "black-1": "#13151D",
         "black-2": "#252A37",
+        "black-3": "#3A404F",
       },
       colors: {
-        "orange": "#eb4432",
+        orange: "#eb4432",
         "white-1": "#ffffff",
         "white-2": "#e7e8f2",
         "gray-1": "#161922",
