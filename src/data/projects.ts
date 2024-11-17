@@ -25,7 +25,7 @@ const projects: Projects[] = [
     description:
       "Aplicação de fast-food simulada para gerenciar pedidos e exibir produtos.",
     techs: ["React.js", "SASS", "React Hooks"],
-    repo: "https://burguershot.vercel.app/",
+    repo: "https://github.com/joaolucasgusmao/burguer-shot",
     deploy: "https://burguershot.vercel.app/",
   },
   {
