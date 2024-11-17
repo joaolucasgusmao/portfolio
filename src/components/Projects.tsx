@@ -4,7 +4,7 @@ import { TbBrandVercel } from "react-icons/tb";
 
 const Projects = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 mt-4">
       <h1 className="text-center text-white font-bold text-2xl">Projetos</h1>
       <div className="flex flex-col gap-8 items-center">
         {projects.map((project) => {
@@ -17,10 +17,10 @@ const Projects = () => {
                 <h2 className="text-orange font-semibold">{project.name}</h2>
                 <div className="flex gap-2">
                   <a target="_blank" href={project.repo}>
-                    <FiGithub className="text-gray-2 text-xl" />
+                    <FiGithub className="text-white text-xl" />
                   </a>
                   <a target="_blank" href={project.deploy}>
-                    <TbBrandVercel className="text-gray-2 text-xl" />
+                    <TbBrandVercel className="text-white text-xl" />
                   </a>
                 </div>
               </div>

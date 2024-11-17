@@ -4,7 +4,7 @@ import { CgSoftwareDownload } from "react-icons/cg";
 
 import Typewriter from "typewriter-effect";
 
-const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
+const AboutMe = () => {
   return (
     <div className="flex flex-col items-center">
       <Image
@@ -20,19 +20,17 @@ const AboutMe = ({ isMenuOpen }: { isMenuOpen: boolean }) => {
           Prazer, João Lucas!✋🏻
         </h1>
         <h2 className="text-orange text-center font-bold text-lg">
-          {!isMenuOpen && (
-            <Typewriter
-              options={{
-                strings: [
-                  "Desenvolvedor Full-Stack",
-                  "Desenvolvedor Front-end",
-                  "Desenvolvedor Back-end",
-                ],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          )}
+          <Typewriter
+            options={{
+              strings: [
+                "Desenvolvedor Full-Stack",
+                "Desenvolvedor Front-end",
+                "Desenvolvedor Back-end",
+              ],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </h2>
       </div>
       <div className="flex flex-col w-full gap-3 mt-2">

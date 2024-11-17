@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <>
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <main className="flex justify-center items-center m-8 flex-col gap-4">
+      <main className="flex justify-center items-center m-8 mt-32 flex-col gap-4">
         <AboutMe isMenuOpen={isMenuOpen} />
         <Projects />
       </main>

@@ -13,14 +13,14 @@ const Header = ({
   };
 
   return (
-    <header className="w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1">
+    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1">
       <Image src={"/logo.png"} alt="Logo do site" width={60} height={60} />
       <div className="hidden sm:flex sm:gap-4 ">
         <a className="text-orange font-title text-base font-semibold" href="#">
           Projetos
         </a>
         <a className="text-orange font-title text-base font-semibold" href="#">
-          Tec's
+          Skills
         </a>
         <a className="text-orange font-title text-base font-semibold" href="#">
           Contato
@@ -35,7 +35,7 @@ const Header = ({
         />
       </button>
 
-      {isMenuOpen && <SideMenu closeMenu={() => setIsMenuOpen(false)} />}
+      {isMenuOpen && <SideMenu />}
     </header>
   );
 };
