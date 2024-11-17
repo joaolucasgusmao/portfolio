@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { CgSoftwareDownload } from "react-icons/cg";
+import { FaWhatsapp } from "react-icons/fa";
+import { IoMailOutline } from "react-icons/io5";
 
 import Typewriter from "typewriter-effect";
 
@@ -40,19 +41,18 @@ const AboutMe = () => {
           PHP e Laravel.
         </p>
       </div>
-      <div className="flex flex-row gap-4 mt-4">
+      <div className="flex flex-row gap-4 mt-6">
         <a target="_blank" href="https://www.linkedin.com/in/joaoolucasgusmao/">
           <FaLinkedin className="text-white text-2xl cursor-pointer" />
         </a>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1Q55Ck_8Ik8tTyI_vTB4uhPKS43AZahRN"
-          download
-          className="h-fit w-fit"
-        >
-          <CgSoftwareDownload className="text-white text-2xl cursor-pointer" />
-        </a>
         <a target="_blank" href="https://github.com/joaolucasgusmao">
           <FaGithub className="text-white text-2xl" />
+        </a>
+        <a target="_blank" href="https://w.app/joaolucas">
+          <FaWhatsapp className="text-white text-2xl" />
+        </a>
+        <a target="_blank" href="mailto:joaolucasgusmao@hotmail.com">
+          <IoMailOutline className="text-white text-2xl" />
         </a>
       </div>
     </div>
