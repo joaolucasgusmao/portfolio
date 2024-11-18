@@ -4,8 +4,9 @@ const experiences: Experiences[] = [
   {
     id: 1,
     role: "Desenvolvedor Full-Stack",
-    period: "Abril/2024 - Atualmente",
+    period: "Abr/24 - Atual",
     company: "Prestige",
+    link: "https://www.prestige.com.br/",
     responsibilities: `
       Atuo no desenvolvimento e manutenção dos sites da empresa,
       implementando novas melhorias e corrigindo bugs. Além disso, sou responsável por 

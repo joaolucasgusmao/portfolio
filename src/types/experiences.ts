@@ -3,6 +3,7 @@ export interface Experiences {
   role: string;
   period: string;
   company: string;
+  link: string;
   responsibilities: string;
-  techs: string[ ];
+  techs: string[];
 }

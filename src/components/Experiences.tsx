@@ -2,24 +2,42 @@ import experiences from "@/data/experiences";
 
 const Experiences = () => {
   return (
-    <section>
-      <h1>Experiência</h1>
-      {experiences.map((experience) => {
-        return (
-          <div>
-            <div>
-              <h2>{experience.role}</h2>
-              <h3>
-                {experience.company} | {experience.period}
-              </h3>
+    <section className="flex flex-col gap-4 mt-4">
+      <h1 className="text-center text-white font-bold text-2xl">Experiência</h1>
+      <div className="flex flex-col gap-8 items-center">
+        {experiences.map((experience) => {
+          return (
+            <div key={experience.id} className="bg-black-2 flex flex-col gap-4">
+              <div className="flex px-4 justify-between gap-1">
+                <h2 className="text-orange font-semibold text-base mt-4 ">
+                  {experience.role}
+                </h2>
+                <div className="flex flex-col mt-2 items-start">
+                  <a
+                    className="text-white text-base font-semibold cursor-pointer transition-colors duration-500 hover:text-orange"
+                    target="_blank"
+                    href={experience.link}
+                  >
+                    {experience.company}
+                  </a>
+                  <span className="text-white text-xs font-medium">
+                    {experience.period}
+                  </span>
+                </div>
+              </div>
+              <p className="text-white text-sm text-left mx-4 font-medium">
+                {experience.responsibilities}
+              </p>
+              <div className="flex flex-col gap-2 mx-4 mb-2 border-t-2 border-gray-700">
+                <span></span>
+                <span className="text-sm text-left font-medium text-gray-100">
+                  {experience.techs.join(", ")}
+                </span>
+              </div>
             </div>
-            <p>{experience.responsibilities}</p>
-            <div>
-              <span>{experience.techs.join(", ")}</span>
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 };
