@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SideMenu from "./SideMenu";
+import Link from "next/link";
 
 const Header = ({
   isMenuOpen,
@@ -15,17 +16,26 @@ const Header = ({
   return (
     <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1">
       <Image src={"/logo.png"} alt="Logo do site" width={60} height={60} />
-      <div className="hidden sm:flex sm:gap-4 ">
-        <a className="text-orange font-title text-base font-semibold" href="#">
+      <nav className="hidden sm:flex sm:gap-4 ">
+        <Link
+          className="text-orange font-title text-base font-semibold"
+          href="#"
+        >
           Projetos
-        </a>
-        <a className="text-orange font-title text-base font-semibold" href="#">
+        </Link>
+        <Link
+          className="text-orange font-title text-base font-semibold"
+          href="#"
+        >
           Skills
-        </a>
-        <a className="text-orange font-title text-base font-semibold" href="#">
+        </Link>
+        <Link
+          className="text-orange font-title text-base font-semibold"
+          href="#"
+        >
           Contato
-        </a>
-      </div>
+        </Link>
+      </nav>
       <button onClick={toggleMenu} className="sm:hidden">
         <Image
           src={"/hamburguer.svg"}
