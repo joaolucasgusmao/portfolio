@@ -9,11 +9,11 @@ const AboutMe = () => {
   return (
     <section className="flex flex-col items-center">
       <Image
-        className="rounded-full w-40 h-52"
+        className="rounded-50 w-40 h-52"
         src="/avatar.png"
         alt="Foto de perfil"
         width={720}
-        height={1110}
+        height={1226}
         priority
       />
 
