@@ -5,10 +5,14 @@ const Footer = () => {
   return (
     <footer className="w-full h-14 bg-black-1 flex justify-between items-center px-6 border-t-2 border-gray-1">
       <p className="text-sm text-white font-medium">
-        Feito com ❤️{" "}
-        <span className="text-xs text-white font-medium">
-          by: joaolucas.dev
-        </span>
+        Feito com ♥︎{" "}
+        <a
+          target="_blank"
+          href="https://github.com/joaolucasgusmao"
+          className="text-xs text-white font-extrabold cursor-pointer"
+        >
+          by: joaolucas
+        </a>
       </p>
       <div className="flex gap-2">
         <a target="_blank" href="https://www.linkedin.com/in/joaoolucasgusmao/">

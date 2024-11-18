@@ -18,7 +18,7 @@ const AboutMe = () => {
       />
 
       <div className="flex flex-col mt-4">
-        <h1 className="text-white text-3xl font-semibold">
+        <h1 className="text-white text-2xl font-semibold">
           Prazer, João Lucas!✋🏻
         </h1>
         <h2 className="text-orange text-center font-bold text-lg">
@@ -36,7 +36,7 @@ const AboutMe = () => {
         </h2>
       </div>
       <div className="flex flex-col w-full gap-3 mt-2">
-        <p className="text-white text-sm w-full text-center font-medium">
+        <p className="text-white text-sm w-full text-left font-medium">
           Sou Desenvolvedor apaixonado por tecnologia e programação, com sólida
           experiência em desenvolvimento de soluções web utilizando React, Node,
           PHP e Laravel.

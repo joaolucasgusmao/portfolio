@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Portfólo</title>
+        <title>Portfólo | João Lucas</title>
       </Head>
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />

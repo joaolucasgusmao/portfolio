@@ -14,7 +14,7 @@ const Projects = () => {
               className="w-full bg-black-2 flex flex-col rounded-md gap-4"
             >
               <div className="flex justify-between items-center mx-4 mt-2 ">
-                <h2 className="text-orange font-semibold">{project.name}</h2>
+                <h2 className="text-base text-orange font-semibold">{project.name}</h2>
                 <div className="flex gap-2">
                   {project.deploy ? (
                     <a target="_blank" href={project.deploy}>
@@ -27,12 +27,12 @@ const Projects = () => {
                   </a>
                 </div>
               </div>
-              <p className="text-white text-sm mx-4 font-medium">
+              <p className="text-white text-sm text-left mx-4 font-medium">
                 {project.description}
               </p>
               <div className="flex flex-col gap-2 mx-4 mb-2 border-t-2 border-gray-700">
                 <span></span>
-                <span className="text-sm font-medium text-gray-100">
+                <span className="text-sm text-left font-medium text-gray-100">
                   {project.techs.join(", ")}
                 </span>
               </div>
