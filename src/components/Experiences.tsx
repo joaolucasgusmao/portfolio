@@ -7,20 +7,21 @@ const Experiences = () => {
       <div className="flex flex-col gap-8 items-center">
         {experiences.map((experience) => {
           return (
-            <div key={experience.id} className="bg-black-2 flex flex-col gap-4">
+            <div key={experience.id} className="bg-black-2 flex flex-col gap-3 pb-2">
               <div className="flex px-4 justify-between gap-1">
-                <h2 className="text-orange font-semibold text-base mt-4 ">
+                <h2 className="text-orange font-semibold text-base mt-2 ">
                   {experience.role}
                 </h2>
-                <div className="flex flex-col mt-2 items-start">
+                <div className="flex flex-row mt-2 items-center gap-1">
                   <a
-                    className="text-white text-base font-semibold cursor-pointer transition-colors duration-500 hover:text-orange"
+                    className="text-white text-sm font-semibold cursor-pointer transition-colors duration-500 hover:text-orange"
                     target="_blank"
                     href={experience.link}
                   >
                     {experience.company}
                   </a>
-                  <span className="text-white text-xs font-medium">
+                  <span className="text-white text-sm font-medium">|</span>
+                  <span className="text-white text-sm font-medium">
                     {experience.period}
                   </span>
                 </div>

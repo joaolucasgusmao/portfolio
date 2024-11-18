@@ -14,9 +14,10 @@ const Skills = () => {
       <Swiper
         modules={[Navigation, Autoplay]}
         slidesPerView={1}
-        autoplay={{delay: 2000}}
+        autoplay={{ delay: 2000 }}
         spaceBetween={50}
         navigation={true}
+        speed={1000}
       >
         {skills.map((skill) => {
           const Icon = skill.icon;
