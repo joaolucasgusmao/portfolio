@@ -14,7 +14,9 @@ const Projects = () => {
               className="w-full bg-black-2 flex flex-col rounded-md gap-4"
             >
               <div className="flex justify-between items-center mx-4 mt-2 ">
-                <h2 className="text-base text-orange font-semibold">{project.name}</h2>
+                <h2 className="text-base text-orange font-semibold">
+                  {project.name}
+                </h2>
                 <div className="flex gap-2">
                   {project.deploy ? (
                     <a target="_blank" href={project.deploy}>

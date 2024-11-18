@@ -20,8 +20,8 @@ const Home = () => {
       <main className="flex justify-center items-center m-8 mt-32 flex-col gap-4">
         <AboutMe />
         <Experiences />
-        <Projects />
         <Skills />
+        <Projects />
       </main>
       <Footer />
     </>

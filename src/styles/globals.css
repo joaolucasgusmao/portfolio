@@ -7,3 +7,29 @@
 body {
   background: #13151d;
 }
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-button-prev {
+  color: #eb4432 !important;
+}
+
+.swiper-button-next {
+  color: #eb4432 !important;
+}
+
+.swiper-button-next::after {
+  font-size: 2rem !important;
+}
+
+.swiper-button-prev::after {
+  font-size: 2rem !important;
+}
