@@ -9,13 +9,14 @@ const AboutMe = () => {
   return (
     <section className="flex flex-col items-center">
       <Image
-        className="rounded-50 w-48 h-42"
+        className="rounded-full w-40 h-52"
         src="/avatar.png"
         alt="Foto de perfil"
         width={720}
-        height={900}
+        height={1110}
         priority
       />
+
       <div className="flex flex-col mt-4">
         <h1 className="text-white text-3xl font-semibold">
           Prazer, João Lucas!✋🏻
@@ -43,16 +44,16 @@ const AboutMe = () => {
       </div>
       <div className="flex flex-row gap-4 mt-6">
         <a target="_blank" href="https://www.linkedin.com/in/joaoolucasgusmao/">
-          <FaLinkedin className="text-white text-2xl cursor-pointer" />
+          <FaLinkedin className="text-white text-2xl cursor-pointer transition-colors duration-500 hover:text-orange" />
         </a>
         <a target="_blank" href="https://github.com/joaolucasgusmao">
-          <FaGithub className="text-white text-2xl" />
+          <FaGithub className="text-white text-2xl transition-colors duration-500 hover:text-orange" />
         </a>
         <a target="_blank" href="https://w.app/joaolucas">
-          <FaWhatsapp className="text-white text-2xl" />
+          <FaWhatsapp className="text-white text-2xl transition-colors duration-500 hover:text-orange" />
         </a>
         <a target="_blank" href="mailto:joaolucasgusmao@hotmail.com">
-          <IoMailOutline className="text-white text-2xl" />
+          <IoMailOutline className="text-white text-2xl transition-colors duration-500 hover:text-orange" />
         </a>
       </div>
     </section>

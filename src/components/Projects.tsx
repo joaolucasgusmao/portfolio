@@ -18,12 +18,12 @@ const Projects = () => {
                 <div className="flex gap-2">
                   {project.deploy ? (
                     <a target="_blank" href={project.deploy}>
-                      <TbBrandVercel className="text-white text-xl" />
+                      <TbBrandVercel className="text-white text-xl transition-colors duration-500 hover:text-orange" />
                     </a>
                   ) : null}
 
                   <a target="_blank" href={project.repo}>
-                    <FiGithub className="text-white text-xl" />
+                    <FiGithub className="text-white text-xl transition-colors duration-500 hover:text-orange" />
                   </a>
                 </div>
               </div>
