@@ -21,7 +21,7 @@ const projects: Projects[] = [
   },
   {
     id: 3,
-    name: "Devs hub",
+    name: "Devs Hub",
     description:
       "Plataforma para desenvolvedores registrarem e compartilharem suas stacks tecnológicas.",
     techs: ["React.js", "SASS", "React Hooks", "Zod"],

@@ -40,7 +40,7 @@ const AboutMe = () => {
       <div className="flex flex-col w-full gap-3 mt-2">
         <p className="text-white text-sm w-full text-left font-medium">
           Sou um Desenvolvedor apaixonado por tecnologia e programação, com sólida
-          experiência em desenvolvimento de soluções web utilizando React, Node,
+          experiência em desenvolvimento de soluções web utilizando React.js, Node.js,
           PHP e Laravel.
         </p>
       </div>

@@ -1,4 +1,3 @@
-import experiences from "@/data/experiences";
 import { Experiences as ExperiencesTypes } from "@/types/experiences";
 
 interface ExperiencesProps {
@@ -40,8 +39,8 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
               <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
                 <span></span>
                 <div className="flex gap-2 flex-wrap items-center justify-start">
-                  {experience.techs.map((tech) => {
-                    return <span className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1">{tech}</span>;
+                  {experience.techs.map((tech, index) => {
+                    return <span key={index} className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1">{tech}</span>;
                   })}
                 </div>
               </div>
