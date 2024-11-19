@@ -9,17 +9,17 @@ const AboutMe = () => {
   return (
     <section className="flex flex-col items-center">
       <Image
-        className="rounded-50 w-40 h-52"
+        className="rounded-full w-44 h-44"
         src="/avatar.png"
         alt="Foto de perfil"
         width={720}
-        height={1226}
+        height={1200}
         priority
       />
 
       <div className="flex flex-col mt-4">
         <h1 className="text-white text-2xl font-semibold">
-          Prazer, João Lucas!✋🏻
+          Prazer, João Lucas! ✋🏻
         </h1>
         <h2 className="text-orange text-center font-bold text-lg">
           <Typewriter
