@@ -1,8 +1,13 @@
 import projects from "@/data/projects";
+import { Projects as ProjectsType } from "@/types/projects";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandVercel } from "react-icons/tb";
 
-const Projects = () => {
+interface ProjectsProps {
+  projects: ProjectsType[];
+}
+
+const Projects = ({ projects }: ProjectsProps) => {
   return (
     <section className="flex flex-col gap-4 mt-4">
       <h1 className="text-center text-white font-bold text-2xl">Projetos</h1>

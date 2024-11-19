@@ -14,8 +14,6 @@ const Skills = () => {
         slidesPerView={1}
         autoplay={{ delay: 1500 }}
         spaceBetween={50}
-        loop={true}
-        loopAdditionalSlides={skills.length}
         navigation={true}
         speed={1000}
       >
