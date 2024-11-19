@@ -1,13 +1,21 @@
 import experiences from "@/data/experiences";
+import { Experiences as ExperiencesTypes } from "@/types/experiences";
 
-const Experiences = () => {
+interface ExperiencesProps {
+  experiences: ExperiencesTypes[];
+}
+
+const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
     <section className="flex flex-col gap-4 mt-4">
       <h1 className="text-center text-white font-bold text-2xl">Experiência</h1>
       <div className="flex flex-col gap-8 items-center">
         {experiences.map((experience) => {
           return (
-            <div key={experience.id} className="bg-black-2 pb-3 flex flex-col gap-3">
+            <div
+              key={experience.id}
+              className="bg-black-2 pb-3 flex flex-col gap-3"
+            >
               <div className="flex px-4 justify-between gap-1">
                 <h2 className="text-orange font-semibold text-base mt-2 ">
                   {experience.role}
