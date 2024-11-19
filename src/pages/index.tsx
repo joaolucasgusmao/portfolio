@@ -4,8 +4,10 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
+import aboutMe from "@/data/aboutMe";
 import experiences from "@/data/experiences";
 import projects from "@/data/projects";
+import { AboutMe as AboutMeTypes } from "@/types/aboutMe";
 import { Experiences as ExperiencesTypes } from "@/types/experiences";
 import { Projects as ProjectsTypes } from "@/types/projects";
 import { GetServerSideProps } from "next";
@@ -15,9 +17,10 @@ import { useState } from "react";
 interface HomeProps {
   projectsData: ProjectsTypes[];
   experiencesData: ExperiencesTypes[];
+  aboutMeData: AboutMeTypes[];
 }
 
-const Home = ({ projectsData, experiencesData }: HomeProps) => {
+const Home = ({ projectsData, experiencesData, aboutMeData }: HomeProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -28,7 +31,7 @@ const Home = ({ projectsData, experiencesData }: HomeProps) => {
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="flex justify-center items-center m-8 mt-32 flex-col gap-4">
-        <AboutMe />
+        <AboutMe aboutMe={aboutMeData} />
         <Experiences experiences={experiencesData} />
         <Skills />
         <Projects projects={projectsData} />
@@ -41,11 +44,13 @@ const Home = ({ projectsData, experiencesData }: HomeProps) => {
 export const getServerSideProps: GetServerSideProps = async () => {
   const projectsData = projects;
   const experiencesData = experiences;
+  const aboutMeData = aboutMe;
 
   return {
     props: {
       projectsData,
       experiencesData,
+      aboutMeData,
     },
   };
 };
