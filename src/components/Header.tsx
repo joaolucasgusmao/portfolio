@@ -45,7 +45,7 @@ const Header = ({
         />
       </button>
 
-      {isMenuOpen && <SideMenu />}
+      {isMenuOpen && <SideMenu setIsMenuOpen={setIsMenuOpen} />}
     </header>
   );
 };
