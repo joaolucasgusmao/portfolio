@@ -7,7 +7,10 @@ import "swiper/css/navigation";
 
 const Skills = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-6 mt-4">
+    <section
+      id="skills"
+      className="w-full flex flex-col items-center gap-6 mt-4"
+    >
       <h1 className="text-center text-white font-bold text-2xl">Skills</h1>
       <Swiper
         modules={[Navigation, Autoplay]}

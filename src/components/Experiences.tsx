@@ -7,7 +7,7 @@ interface ExperiencesProps {
 
 const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
-    <section className="flex flex-col gap-4 mt-4">
+    <section id="experiences" className="flex flex-col gap-4 mt-4">
       <h1 className="text-center text-white font-bold text-2xl">Experiência</h1>
       <div className="flex flex-col gap-8 items-center">
         {experiences.map((experience) => {
@@ -39,9 +39,11 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
               </p>
               <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
                 <span></span>
-                <span className="text-sm text-left font-medium text-gray-100">
-                  {experience.techs.join(", ")}
-                </span>
+                <div className="flex gap-2 flex-wrap items-center justify-start">
+                  {experience.techs.map((tech) => {
+                    return <span className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1">{tech}</span>;
+                  })}
+                </div>
               </div>
             </div>
           );

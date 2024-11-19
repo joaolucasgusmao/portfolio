@@ -19,21 +19,21 @@ const Header = ({
       <nav className="hidden sm:flex sm:gap-4 ">
         <Link
           className="text-orange font-title text-base font-semibold"
-          href="#"
+          href="#experiences"
         >
-          Projetos
+          Experiência
         </Link>
         <Link
           className="text-orange font-title text-base font-semibold"
-          href="#"
+          href="#skills"
         >
           Skills
         </Link>
         <Link
           className="text-orange font-title text-base font-semibold"
-          href="#"
+          href="#projects"
         >
-          Contato
+          Projetos
         </Link>
       </nav>
       <button onClick={toggleMenu} className="sm:hidden">

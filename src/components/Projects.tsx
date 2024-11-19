@@ -1,4 +1,3 @@
-import projects from "@/data/projects";
 import { Projects as ProjectsType } from "@/types/projects";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandVercel } from "react-icons/tb";
@@ -9,7 +8,7 @@ interface ProjectsProps {
 
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <section className="flex flex-col gap-4 mt-4">
+    <section id="projects" className="flex flex-col gap-4 mt-4">
       <h1 className="text-center text-white font-bold text-2xl">Projetos</h1>
       <div className="flex flex-col gap-8 items-center">
         {projects.map((project) => {
@@ -39,9 +38,15 @@ const Projects = ({ projects }: ProjectsProps) => {
               </p>
               <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
                 <span></span>
-                <span className="text-sm text-left font-medium text-gray-100">
-                  {project.techs.join(", ")}
-                </span>
+                <div className="flex gap-2 flex-wrap items-center justify-start">
+                  {project.techs.map((tech) => {
+                    return (
+                      <span className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1">
+                        {tech}
+                      </span>
+                    );
+                  })}
+                </div>
               </div>
             </div>
           );

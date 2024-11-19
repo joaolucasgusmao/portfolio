@@ -9,8 +9,7 @@ const experiences: Experiences[] = [
     link: "https://www.prestige.com.br/",
     responsibilities: `
       Atuo no desenvolvimento e manutenção dos sites da empresa,
-      implementando novas melhorias e corrigindo bugs. Além disso, sou responsável por 
-      garantir a performance e escalabilidade das aplicações.
+      implementando novas melhorias e corrigindo bugs.
     `,
     techs: [
       "HTML",
@@ -22,8 +21,8 @@ const experiences: Experiences[] = [
       "Docker",
       "Git",
       "GitHub",
-      "PostgreSQL",
       "SCRUM",
+      "PostgreSQL",
     ],
   },
 ];

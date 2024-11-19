@@ -6,21 +6,21 @@ const SideMenu = () => {
       <div className="flex flex-col gap-2">
         <Link
           className="w-full py-2 pl-4 text-white font-title text-sm font-semibold hover:text-orange hover:bg-black-2 active:text-orange active:bg-black-2"
-          href="#"
+          href="#experiences"
         >
-          Projetos
+          Experiência
         </Link>
         <Link
           className="w-full py-2 pl-4 text-white font-title text-sm font-semibold hover:text-orange hover:bg-black-2 active:text-orange active:bg-black-2"
-          href="#"
+          href="#skills"
         >
           Skills
         </Link>
         <Link
           className="w-full py-2 pl-4 text-white font-title text-sm font-semibold hover:text-orange hover:bg-black-2 active:text-orange active:bg-black-2"
-          href="#"
+          href="#projects"
         >
-          Contato
+          Projetos
         </Link>
       </div>
     </nav>
