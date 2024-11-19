@@ -20,16 +20,26 @@ body {
 
 .swiper-button-prev {
   color: #eb4432 !important;
+  background-color: #252a37;
+  height: 35px !important;
+  border-radius: 5px;
 }
 
 .swiper-button-next {
+  text-align: center;
   color: #eb4432 !important;
+  background-color: #252a37;
+  height: 35px !important;
+  border-radius: 5px;
 }
 
 .swiper-button-next::after {
-  font-size: 2rem !important;
+  font-size: 1.1rem !important;
+  font-weight: bolder !important;
+  padding-left: 0.2rem !important;
 }
 
 .swiper-button-prev::after {
-  font-size: 2rem !important;
+  font-size: 1.1rem !important;
+  font-weight: bolder !important;
 }

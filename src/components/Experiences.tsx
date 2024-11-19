@@ -14,7 +14,7 @@ const Experiences = () => {
                 </h2>
                 <div className="flex flex-row mt-2 items-center gap-1">
                   <a
-                    className="text-white text-sm font-semibold cursor-pointer transition-colors duration-500 hover:text-orange"
+                    className="text-white text-sm font-bold cursor-pointer transition-colors duration-500 hover:text-orange"
                     target="_blank"
                     href={experience.link}
                   >
