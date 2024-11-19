@@ -1,5 +1,4 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoMailOutline } from "react-icons/io5";
 
 const Footer = () => {
   return (
