@@ -31,6 +31,8 @@ const AboutMe = () => {
               ],
               autoStart: true,
               loop: true,
+              delay: 100,
+              deleteSpeed: 100,
             }}
           />
         </h2>

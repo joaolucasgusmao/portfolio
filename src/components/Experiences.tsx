@@ -7,7 +7,7 @@ const Experiences = () => {
       <div className="flex flex-col gap-8 items-center">
         {experiences.map((experience) => {
           return (
-            <div key={experience.id} className="bg-black-2 flex flex-col gap-3 pb-2">
+            <div key={experience.id} className="bg-black-2 pb-3 flex flex-col gap-3">
               <div className="flex px-4 justify-between gap-1">
                 <h2 className="text-orange font-semibold text-base mt-2 ">
                   {experience.role}
@@ -29,7 +29,7 @@ const Experiences = () => {
               <p className="text-white text-sm text-left mx-4 font-medium">
                 {experience.responsibilities}
               </p>
-              <div className="flex flex-col gap-2 mx-4 mb-2 border-t-2 border-gray-700">
+              <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
                 <span></span>
                 <span className="text-sm text-left font-medium text-gray-100">
                   {experience.techs.join(", ")}

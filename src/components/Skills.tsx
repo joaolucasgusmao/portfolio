@@ -1,11 +1,9 @@
-"use client";
-
 import skills from "@/data/skills";
-import "swiper/css";
-import "swiper/css/navigation";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const Skills = () => {
   return (
@@ -14,8 +12,10 @@ const Skills = () => {
       <Swiper
         modules={[Navigation, Autoplay]}
         slidesPerView={1}
-        autoplay={{ delay: 2000 }}
+        autoplay={{ delay: 1500 }}
         spaceBetween={50}
+        loop={true}
+        loopAdditionalSlides={skills.length}
         navigation={true}
         speed={1000}
       >
