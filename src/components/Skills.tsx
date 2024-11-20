@@ -22,14 +22,20 @@ const Skills = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        slidesPerView={1}
         autoplay={{ delay: 1500 }}
         loop={true}
-        spaceBetween={50}
         navigation={true}
         speed={1000}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
       >
-        {skills.map((skill, index) => {
+        {skills.map((skill) => {
           const Icon = skill.icon;
           return (
             <SwiperSlide key={skill.id}>
