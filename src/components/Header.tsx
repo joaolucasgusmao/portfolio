@@ -13,9 +13,26 @@ const Header = ({
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const clearHash = () => {
+    if (window.location.hash) {
+      history.replaceState(null, "", window.location.pathname);
+    }
+  };
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    clearHash()
+  };
+
   return (
-    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10">
-      <Image src={"/logo.png"} alt="Logo do site" width={60} height={60} />
+    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10 cursor-pointer">
+      <Image
+        onClick={scrollToTop}
+        src={"/logo.png"}
+        alt="Logo do site"
+        width={60}
+        height={60}
+      />
       <nav className="hidden sm:flex sm:gap-4 ">
         <Link
           className="text-orange font-title text-base font-semibold"
