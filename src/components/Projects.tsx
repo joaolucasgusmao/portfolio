@@ -50,12 +50,11 @@ const Projects = ({ projects }: ProjectsProps) => {
               {project.description}
             </p>
             <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
-              <span></span>
               <div className="flex gap-2 pt-2 flex-wrap items-center justify-start">
                 {project.techs.map((tech, index) => (
                   <span
                     key={index}
-                    className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1"
+                    className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1 mt-1"
                   >
                     {tech}
                   </span>

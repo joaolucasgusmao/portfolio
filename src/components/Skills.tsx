@@ -10,19 +10,15 @@ import { motion } from "framer-motion";
 
 const Skills = () => {
   return (
-    <section
+    <motion.section
       id="skills"
       className="w-full flex flex-col items-center gap-6 mt-4"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ amount: 0.5 }}
     >
-      <motion.h1
-        className="text-center text-white font-bold text-2xl"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-      >
-        Skills
-      </motion.h1>
+      <h1 className="text-center text-white font-bold text-2xl">Skills</h1>
 
       <Swiper
         modules={[Navigation, Autoplay]}
@@ -33,7 +29,7 @@ const Skills = () => {
         navigation={true}
         speed={1000}
       >
-        {skills.map((skill) => {
+        {skills.map((skill, index) => {
           const Icon = skill.icon;
           return (
             <SwiperSlide key={skill.id}>
@@ -42,7 +38,7 @@ const Skills = () => {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+                viewport={{ amount: 0.5 }}
               >
                 <Icon style={{ color: skill.color }} className="text-4xl" />
                 <p className="text-lg text-white font-semibold">{skill.name}</p>
@@ -51,7 +47,7 @@ const Skills = () => {
           );
         })}
       </Swiper>
-    </section>
+    </motion.section>
   );
 };
 
