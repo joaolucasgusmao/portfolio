@@ -1,6 +1,5 @@
 "use-client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 
 const SideMenu = ({
@@ -8,6 +7,14 @@ const SideMenu = ({
 }: {
   setIsMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }) => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false);
+    }
+  };
+
   return (
     <motion.nav
       initial={{ x: "100%" }}
@@ -17,27 +24,24 @@ const SideMenu = ({
       className="w-full bg-black-1 flex flex-col fixed top-16 left-0"
     >
       <div className="flex flex-col gap-2">
-        <Link
+        <a
           className="w-full py-2 pl-4 text-white font-title text-sm font-semibold transition-colors duration-500 hover:text-orange hover:bg-black-2"
-          href="#experiences"
-          onClick={() => setIsMenuOpen(false)}
+          onClick={() => scrollToSection("experiences")}
         >
           Experiência
-        </Link>
-        <Link
+        </a>
+        <a
           className="w-full py-2 pl-4 text-white font-title text-sm font-semibold transition-colors duration-500 hover:text-orange hover:bg-black-2"
-          href="#skills"
-          onClick={() => setIsMenuOpen(false)}
+          onClick={() => scrollToSection("skills")}
         >
           Skills
-        </Link>
-        <Link
+        </a>
+        <a
           className="w-full py-3 pl-4 text-white font-title text-sm font-semibold transition-colors duration-500 hover:text-orange hover:bg-black-2"
-          href="#projects"
-          onClick={() => setIsMenuOpen(false)}
+          onClick={() => scrollToSection("projects")}
         >
           Projetos
-        </Link>
+        </a>
       </div>
     </motion.nav>
   );

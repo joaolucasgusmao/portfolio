@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="w-full flex flex-col items-center gap-6 mt-4"
+      className="w-full flex flex-col items-center gap-6 mt-4 scroll-mt-20"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}

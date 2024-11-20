@@ -1,6 +1,5 @@
 import Image from "next/image";
 import SideMenu from "./SideMenu";
-import Link from "next/link";
 
 const Header = ({
   isMenuOpen,
@@ -24,34 +23,42 @@ const Header = ({
     clearHash();
   };
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10 cursor-pointer">
+    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10">
       <Image
         onClick={scrollToTop}
         src={"/logo.png"}
         alt="Logo do site"
         width={60}
         height={60}
+        className="cursor-pointer"
       />
       <nav className="hidden sm:flex sm:gap-4 ">
-        <Link
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
-          href="#experiences"
+        <a
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          onClick={() => scrollToSection("experiences")}
         >
           Experiência
-        </Link>
-        <Link
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
-          href="#skills"
+        </a>
+        <a
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          onClick={() => scrollToSection("skills")}
         >
           Skills
-        </Link>
-        <Link
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
-          href="#projects"
+        </a>
+        <a
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          onClick={() => scrollToSection("projects")}
         >
           Projetos
-        </Link>
+        </a>
       </nav>
       <button onClick={toggleMenu} className="sm:hidden">
         <Image

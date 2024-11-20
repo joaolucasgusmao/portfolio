@@ -11,7 +11,7 @@ interface ProjectsProps {
 
 const Projects = ({ projects }: ProjectsProps) => {
   return (
-    <section id="projects" className="flex flex-col gap-4 mt-4">
+    <section id="projects" className="flex flex-col gap-4 mt-4 scroll-mt-20">
       <motion.h1
         className="text-center text-white font-bold text-2xl"
         initial={{ opacity: 0 }}
@@ -28,7 +28,7 @@ const Projects = ({ projects }: ProjectsProps) => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ amount: 0.5 }}
+            viewport={{ amount: 0.2 }}
             className="w-full bg-black-2 pb-3 flex flex-col rounded-md gap-4 sm:w-2/4"
           >
             <div className="flex justify-between items-center mx-4 mt-2 ">

@@ -9,7 +9,7 @@ interface ExperiencesProps {
 
 const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
-    <section id="experiences" className="flex flex-col gap-4 mt-4">
+    <section id="experiences" className="flex flex-col gap-4 mt-4 scroll-mt-20">
       <h1 className="text-center text-white font-bold text-2xl">Experiência</h1>
 
       <div className="flex flex-col gap-8 items-center">
