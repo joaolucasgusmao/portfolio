@@ -21,7 +21,7 @@ const Header = ({
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-    clearHash()
+    clearHash();
   };
 
   return (
@@ -35,19 +35,19 @@ const Header = ({
       />
       <nav className="hidden sm:flex sm:gap-4 ">
         <Link
-          className="text-orange font-title text-base font-semibold"
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
           href="#experiences"
         >
           Experiência
         </Link>
         <Link
-          className="text-orange font-title text-base font-semibold"
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
           href="#skills"
         >
           Skills
         </Link>
         <Link
-          className="text-orange font-title text-base font-semibold"
+          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500"
           href="#projects"
         >
           Projetos

@@ -16,29 +16,29 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
         {experiences.map((experience) => (
           <div
             key={experience.id}
-            className="bg-black-2 pb-3 flex flex-col gap-3"
+            className="bg-black-2 pb-3 flex flex-col gap-3 sm:w-2/3"
           >
             <div className="flex px-4 justify-between gap-1">
-              <h2 className="text-orange font-semibold text-base mt-2">
+              <h2 className="text-orange font-semibold text-base mt-2 sm:text-xl">
                 {experience.role}
               </h2>
 
               <div className="flex flex-row mt-2 items-center gap-1">
                 <a
-                  className="text-white text-sm font-bold cursor-pointer transition-colors duration-500 hover:text-orange"
+                  className="text-white text-sm font-bold cursor-pointer transition-colors duration-500 hover:text-orange sm:text-lg"
                   target="_blank"
                   href={experience.link}
                 >
                   {experience.company}
                 </a>
-                <span className="text-white text-sm font-medium">|</span>
-                <span className="text-white text-sm font-medium">
+                <span className="text-white text-sm font-medium sm:text-lg">|</span>
+                <span className="text-white text-sm font-medium sm:text-lg">
                   {experience.period}
                 </span>
               </div>
             </div>
 
-            <p className="text-white text-sm text-left mx-4 font-medium">
+            <p className="text-white text-sm text-left mx-4 font-medium sm:text-base">
               {experience.responsibilities}
             </p>
 
