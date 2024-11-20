@@ -1,5 +1,3 @@
-"use-client";
-
 import { Projects as ProjectsType } from "@/types/projects";
 import { FiGithub } from "react-icons/fi";
 import { TbBrandVercel } from "react-icons/tb";
@@ -10,6 +8,15 @@ interface ProjectsProps {
 }
 
 const Projects = ({ projects }: ProjectsProps) => {
+  const groupedProjects = projects.reduce((acc, project, index) => {
+    if (index % 2 === 0) {
+      acc.push([project]);
+    } else {
+      acc[acc.length - 1].push(project);
+    }
+    return acc;
+  }, [] as ProjectsType[][]);
+
   return (
     <section id="projects" className="flex flex-col gap-4 mt-4 scroll-mt-20">
       <motion.h1
@@ -21,47 +28,54 @@ const Projects = ({ projects }: ProjectsProps) => {
       >
         Projetos
       </motion.h1>
-      <div className="flex flex-col gap-8 items-center">
-        {projects.map((project) => (
-          <motion.div
-            key={project.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ amount: 0.2 }}
-            className="w-full bg-black-2 pb-3 flex flex-col rounded-md gap-4 sm:w-2/4"
+      <div className="flex flex-col gap-4 items-center">
+        {groupedProjects.map((group, groupIndex) => (
+          <div
+            key={groupIndex}
+            className="flex flex-wrap gap-4 justify-center w-full lg:flex-row lg:flex-nowrap "
           >
-            <div className="flex justify-between items-center mx-4 mt-2 ">
-              <h2 className="text-base text-orange font-semibold sm:text-xl">
-                {project.name}
-              </h2>
-              <div className="flex gap-2">
-                {project.deploy && (
-                  <a target="_blank" href={project.deploy}>
-                    <TbBrandVercel className="text-white text-xl transition-colors duration-500 hover:text-orange sm:text-2xl" />
-                  </a>
-                )}
-                <a target="_blank" href={project.repo}>
-                  <FiGithub className="text-white text-xl transition-colors duration-500 hover:text-orange sm:text-2xl" />
-                </a>
-              </div>
-            </div>
-            <p className="text-white text-sm text-left mx-4 font-medium sm:text-base">
-              {project.description}
-            </p>
-            <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
-              <div className="flex gap-2 pt-2 flex-wrap items-center justify-start">
-                {project.techs.map((tech, index) => (
-                  <span
-                    key={index}
-                    className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1 mt-1"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </motion.div>
+            {group.map((project) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ amount: 0.2 }}
+                className="w-full bg-black-2 pb-3 flex flex-col rounded-md gap-4 sm:w-2/3 lg:w-2/5"
+              >
+                <div className="flex justify-between items-center mx-4 mt-2">
+                  <h2 className="text-base text-orange font-semibold sm:text-xl">
+                    {project.name}
+                  </h2>
+                  <div className="flex gap-2">
+                    {project.deploy && (
+                      <a target="_blank" href={project.deploy}>
+                        <TbBrandVercel className="text-white text-xl transition-colors duration-500 hover:text-orange sm:text-2xl" />
+                      </a>
+                    )}
+                    <a target="_blank" href={project.repo}>
+                      <FiGithub className="text-white text-xl transition-colors duration-500 hover:text-orange sm:text-2xl" />
+                    </a>
+                  </div>
+                </div>
+                <p className="text-white text-sm text-left mx-4 font-medium sm:text-base">
+                  {project.description}
+                </p>
+                <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-700">
+                  <div className="flex gap-2 pt-2 flex-wrap items-center justify-start">
+                    {project.techs.map((tech, index) => (
+                      <span
+                        key={index}
+                        className="text-white font-medium text-sm bg-black-3 rounded-full px-2 py-1 mt-1"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         ))}
       </div>
     </section>
