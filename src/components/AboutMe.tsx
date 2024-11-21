@@ -34,7 +34,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
           src={image}
           alt={`Foto de perfil de ${name}`}
           width={720}
-          height={1200}
+          height={1226}
           priority
         />
 

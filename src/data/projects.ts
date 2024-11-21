@@ -3,6 +3,15 @@ import { Projects } from "@/types/projects";
 const projects: Projects[] = [
   {
     id: 1,
+    name: "Burguer Shot",
+    description:
+      "Hamburgueria com funcionalidade de adição de produtos ao carrinho.",
+    techs: ["React.js", "SASS", "React Hooks", "Axios"],
+    repo: "https://github.com/joaolucasgusmao/burguer-shot",
+    deploy: "https://burguershot.vercel.app/",
+  },
+  {
+    id: 2,
     name: "Control Finance",
     description:
       "Aplicação para o gerenciamento de finanças com funcionalidades de controle de despesas, receitas e dark mode.",
@@ -11,20 +20,11 @@ const projects: Projects[] = [
     deploy: "https://controlfinancee.vercel.app/",
   },
   {
-    id: 2,
-    name: "Burguer Shot",
-    description:
-      "Hamburgueria com funcionalidade de adição de produtos ao carrinho.",
-    techs: ["React.js", "SASS", "React Hooks"],
-    repo: "https://github.com/joaolucasgusmao/burguer-shot",
-    deploy: "https://burguershot.vercel.app/",
-  },
-  {
     id: 3,
     name: "Devs Hub",
     description:
       "Aplicação com funcionalidades de cadastro, login e registro de tecnologias.",
-    techs: ["React.js", "SASS", "React Hooks", "Zod"],
+    techs: ["React.js", "SASS", "React Hooks", "Zod", "Axios"],
     repo: "https://github.com/joaolucasgusmao/devs-hub",
     deploy: "https://deevshub.vercel.app/",
   },
