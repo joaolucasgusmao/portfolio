@@ -43,6 +43,13 @@ const Header = ({
       <nav className="hidden sm:flex sm:gap-4 ">
         <a
           className="text-orange  text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          target="_blank"
+          href="https://drive.google.com/file/d/1gOBDKFDPaNLoZub4dSV284ndizzzcSg3/view?usp=drive_link"
+        >
+          Meu curriculo
+        </a>
+        <a
+          className="text-orange  text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
           onClick={() => scrollToSection("experiences")}
         >
           Experiência
