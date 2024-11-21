@@ -42,19 +42,19 @@ const Header = ({
       />
       <nav className="hidden sm:flex sm:gap-4 ">
         <a
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          className="text-orange  text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
           onClick={() => scrollToSection("experiences")}
         >
           Experiência
         </a>
         <a
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          className="text-orange  text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
           onClick={() => scrollToSection("skills")}
         >
           Skills
         </a>
         <a
-          className="text-orange font-title text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
+          className="text-orange  text-lg font-semibold border-transparent hover:border-b-2 hover:border-orange transition-all duration-500 cursor-pointer"
           onClick={() => scrollToSection("projects")}
         >
           Projetos

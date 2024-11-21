@@ -6,6 +6,7 @@
 
 body {
   background: #13151d;
+  font-family: "Roboto", sans-serif;
 }
 
 .swiper {
@@ -29,7 +30,9 @@ body {
   color: #eb4432 !important;
   background-color: #252a37;
   height: 35px !important;
-  border-radius: 5px;
+  border-radius: 0.3rem;
+
+  transition: background 500ms ease;
 }
 
 .swiper-button-next {
@@ -37,7 +40,17 @@ body {
   color: #eb4432 !important;
   background-color: #252a37;
   height: 35px !important;
-  border-radius: 5px;
+  border-radius: 0.3rem;
+
+  transition: background 500ms ease;
+}
+
+.swiper-button-next:hover {
+  background: #374151;
+}
+
+.swiper-button-prev:hover {
+  background: #374151;
 }
 
 .swiper-button-next::after {

@@ -55,7 +55,7 @@ const projects: Projects[] = [
 
   {
     id: 6,
-    name: "Laravel API",
+    name: "Users API",
     description: "CRUD de usuários.",
     techs: ["PHP", "Laravel", "Docker", "MySQL"],
     repo: "https://github.com/joaolucasgusmao/users-api",

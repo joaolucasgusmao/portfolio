@@ -28,7 +28,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
         />
 
         <div className="flex flex-col mt-4">
-          <h1 className="text-white text-2xl font-semibold">
+          <h1 className="text-white-1 text-2xl font-semibold">
             Prazer, {name}!✋🏻
           </h1>
 
@@ -47,22 +47,22 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
       </div>
 
       <div className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12">
-        <p className="text-white text-sm w-full text-left font-medium sm:text-lg">
+        <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
           {bio}
         </p>
 
         <div className="flex flex-row gap-4">
           <a target="_blank" href={links.linkedin}>
-            <FaLinkedin className="text-white text-2xl sm:text-3xl cursor-pointer transition-colors duration-500 hover:text-orange" />
+            <FaLinkedin className="text-white-1 text-2xl sm:text-3xl cursor-pointer transition-colors duration-500 hover:text-orange" />
           </a>
           <a target="_blank" href={links.github}>
-            <FaGithub className="text-white text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
+            <FaGithub className="text-white-1 text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
           </a>
           <a target="_blank" href={links.whatsapp}>
-            <FaWhatsapp className="text-white text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
+            <FaWhatsapp className="text-white-1 text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
           </a>
           <a target="_blank" href={links.mail}>
-            <IoMailOutline className="text-white text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
+            <IoMailOutline className="text-white-1 text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
           </a>
         </div>
       </div>
