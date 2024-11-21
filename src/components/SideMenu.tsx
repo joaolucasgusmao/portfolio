@@ -30,7 +30,7 @@ const SideMenu = ({
           onClick={() => setIsMenuOpen(false)}
           href="https://drive.google.com/file/d/1gOBDKFDPaNLoZub4dSV284ndizzzcSg3/view?usp=drive_link"
         >
-          Meu curriculo
+          Meu CV
         </a>
         <a
           className="w-full py-2 pl-4 text-white-1  text-sm font-semibold transition-colors duration-500 hover:text-orange hover:bg-black-2"
