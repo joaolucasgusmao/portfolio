@@ -30,7 +30,7 @@ const Home = ({ projectsData, experiencesData, aboutMeData }: HomeProps) => {
       </Head>
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <main className="flex justify-center items-center m-8 mt-32 flex-col gap-4">
+      <main className="flex justify-center items-center mx-8 mt-28 mb-12 flex-col gap-4">
         <AboutMe aboutMe={aboutMeData} />
         <Experiences experiences={experiencesData} />
         <Skills />
