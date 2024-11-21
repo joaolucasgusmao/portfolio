@@ -22,7 +22,7 @@ const Skills = () => {
 
       <Swiper
         modules={[Navigation, Autoplay]}
-        autoplay={{ delay: 1500 }}
+        autoplay={{ delay: 500 }}
         loop={true}
         navigation={true}
         speed={1000}
