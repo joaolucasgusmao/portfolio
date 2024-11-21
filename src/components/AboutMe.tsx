@@ -40,7 +40,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
 
         <div className="flex flex-col mt-4">
           <h1 className="text-white-1 text-2xl font-semibold">
-            Prazer, {name}!✋🏻
+            Prazer, {name}! ✋🏻
           </h1>
 
           <h2 className="text-orange text-center font-bold text-lg sm:text-xl">
