@@ -7,6 +7,7 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoMailOutline } from "react-icons/io5";
 
 import Typewriter from "typewriter-effect";
+import { motion } from "framer-motion";
 
 interface AboutMeProps {
   aboutMe: AboutMeTypes[];
@@ -17,7 +18,17 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
 
   return (
     <section className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-12">
-      <div className="flex flex-col items-center">
+      <motion.div
+        className="flex flex-col items-center"
+        initial={{ x: -1000, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{
+          type: "spring",
+          duration: 3,
+          stiffness: 40,
+          delay: 0.2,
+        }}
+      >
         <Image
           className="rounded-full w-44 h-52 sm:w-60 sm:h-72"
           src={image}
@@ -44,9 +55,19 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
             />
           </h2>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12">
+      <motion.div
+        className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12"
+        transition={{
+          type: "spring",
+          delay: 0.2,
+          duration: 1.5,
+          stiffness: 40,
+        }}
+        initial={{ x: 1300, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+      >
         <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
           {bio}
         </p>
@@ -65,7 +86,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
             <IoMailOutline className="text-white-1 text-2xl sm:text-3xl transition-colors duration-500 hover:text-orange" />
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };
