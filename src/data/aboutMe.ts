@@ -2,7 +2,7 @@ import { AboutMe } from "@/types/aboutMe";
 
 const aboutMe: AboutMe[] = [
   {
-    image: "/avatar.png",
+    image: "https://i.ibb.co/mTDw5kL/avatar.png",
     name: "João Lucas",
     bio: `Sou um Desenvolvedor apaixonado por tecnologia e programação, com sólida
           experiência em desenvolvimento de soluções web utilizando React.js, Node.js,
