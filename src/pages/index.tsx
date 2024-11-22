@@ -7,6 +7,7 @@ import Skills from "@/components/Skills";
 import aboutMe from "@/data/aboutMe";
 import experiences from "@/data/experiences";
 import projects from "@/data/projects";
+
 import { AboutMe as AboutMeTypes } from "@/types/aboutMe";
 import { Experiences as ExperiencesTypes } from "@/types/experiences";
 import { Projects as ProjectsTypes } from "@/types/projects";

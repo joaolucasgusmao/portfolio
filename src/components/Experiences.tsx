@@ -29,7 +29,7 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
         {experiences.map((experience) => (
           <motion.div
             key={experience.id}
-            className="w-full h-fit bg-black-2 rounded-lg pb-3 flex flex-col gap-3 sm:w-2/3"
+            className="w-full h-fit bg-black-2 rounded-lg pb-4 flex flex-col gap-3 sm:w-2/3"
             transition={{
               type: "spring",
               delay: 0.2,

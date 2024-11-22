@@ -18,7 +18,7 @@ const Projects = ({ projects }: ProjectsProps) => {
   }, [] as ProjectsType[][]);
 
   return (
-    <section id="projects" className="flex flex-col gap-4 scroll-mt-20">
+    <section id="projects" className="flex flex-col gap-8 scroll-mt-20">
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ opacity: 0 }}
@@ -28,15 +28,15 @@ const Projects = ({ projects }: ProjectsProps) => {
       >
         Projetos
       </motion.h1>
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-8 items-center">
         {groupedProjects.map((group, groupIndex) => (
           <div
             key={groupIndex}
-            className="flex flex-wrap items-center gap-4 justify-center w-full lg:flex-row lg:flex-nowrap "
+            className="flex flex-wrap items-center gap-8 justify-center w-full lg:flex-row lg:flex-nowrap "
           >
             {group.map((project) => (
               <motion.div
-                className="w-full h-fit bg-black-2 pb-3 flex flex-col rounded-lg gap-4 sm:w-2/3 lg:w-2/5"
+                className="w-full h-fit bg-black-2 pb-4 flex flex-col rounded-lg gap-4 sm:w-2/3 lg:w-1/3"
                 key={project.id}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
