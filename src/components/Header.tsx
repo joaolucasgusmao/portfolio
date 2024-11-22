@@ -31,7 +31,7 @@ const Header = ({
   };
 
   return (
-    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10">
+    <header className="fixed top-0 w-full h-16 bg-black-1 flex justify-between items-center px-6 border-b-2 border-gray-1 z-10 sm:px-24">
       <Image
         onClick={scrollToTop}
         src={"/logo.png"}

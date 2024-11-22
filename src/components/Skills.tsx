@@ -12,7 +12,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="w-full flex flex-col items-center gap-6 mt-4 scroll-mt-20"
+      className="w-full flex flex-col items-center gap-6 scroll-mt-20"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -47,7 +47,9 @@ const Skills = () => {
                 viewport={{ amount: 0.5 }}
               >
                 <Icon style={{ color: skill.color }} className="text-4xl" />
-                <p className="text-lg text-white-1 font-semibold">{skill.name}</p>
+                <p className="text-lg text-white-1 font-semibold">
+                  {skill.name}
+                </p>
               </motion.div>
             </SwiperSlide>
           );

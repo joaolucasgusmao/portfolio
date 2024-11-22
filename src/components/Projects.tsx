@@ -18,7 +18,7 @@ const Projects = ({ projects }: ProjectsProps) => {
   }, [] as ProjectsType[][]);
 
   return (
-    <section id="projects" className="flex flex-col gap-4 mt-4 scroll-mt-20">
+    <section id="projects" className="flex flex-col gap-4 scroll-mt-20">
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ opacity: 0 }}

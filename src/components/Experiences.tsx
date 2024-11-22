@@ -10,7 +10,7 @@ interface ExperiencesProps {
 
 const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
-    <section id="experiences" className="flex flex-col gap-4 mt-4 scroll-mt-20">
+    <section id="experiences" className="flex flex-col gap-4 scroll-mt-20">
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ x: -1000, opacity: 0 }}
