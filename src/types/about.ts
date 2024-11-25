@@ -1,4 +1,4 @@
-export interface AboutMe {
+export interface About {
   image: string;
   name: string;
   bio: string;

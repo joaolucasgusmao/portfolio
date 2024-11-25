@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutMe as AboutMeTypes } from "@/types/aboutMe";
+import { AboutMe as AboutMeTypes } from "@/types/about";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
