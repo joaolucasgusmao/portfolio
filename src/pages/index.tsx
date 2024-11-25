@@ -11,7 +11,7 @@ import projects from "@/data/projects";
 import { AboutMe as AboutMeTypes } from "@/types/aboutMe";
 import { Experiences as ExperiencesTypes } from "@/types/experiences";
 import { Projects as ProjectsTypes } from "@/types/projects";
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import Head from "next/head";
 import { useState, useEffect } from "react";
 import { PacmanLoader } from "react-spinners";
@@ -57,7 +57,7 @@ const Home = ({ projectsData, experiencesData, aboutMeData }: HomeProps) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const projectsData = projects;
   const experiencesData = experiences;
   const aboutMeData = aboutMe;

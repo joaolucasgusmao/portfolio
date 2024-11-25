@@ -22,7 +22,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
         className="flex flex-col items-center"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.3 }}
       >
         <Image
           className="rounded-full w-44 h-52 sm:w-60 sm:h-72"
@@ -56,7 +56,7 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
         className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.5 }}
+        transition={{ duration: 1.3 }}
       >
         <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
           {bio}

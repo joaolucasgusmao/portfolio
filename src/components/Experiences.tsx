@@ -15,7 +15,7 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 1.3 }}
       >
         Experiência
       </motion.h1>
@@ -27,7 +27,7 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
             className="w-full h-fit bg-black-2 rounded-lg pb-4 flex flex-col gap-3 sm:w-2/3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 1, delay: 0.5 }}
+            transition={{ duration: 1.3 }}
           >
             <div className="flex px-4 justify-between gap-1">
               <h2 className="text-orange font-semibold text-base mt-2 sm:text-xl">
