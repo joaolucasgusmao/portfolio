@@ -18,16 +18,12 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
 
   return (
     <section className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-12">
+      {/* Animação de opacidade suave para a imagem e o nome */}
       <motion.div
         className="flex flex-col items-center"
-        initial={{ x: -1000, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{
-          type: "spring",
-          duration: 3,
-          stiffness: 40,
-          delay: 0.2,
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         <Image
           className="rounded-full w-44 h-52 sm:w-60 sm:h-72"
@@ -59,14 +55,9 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
 
       <motion.div
         className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12"
-        transition={{
-          type: "spring",
-          delay: 0.2,
-          duration: 1.5,
-          stiffness: 40,
-        }}
-        initial={{ x: 1300, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 0.5 }}
       >
         <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
           {bio}

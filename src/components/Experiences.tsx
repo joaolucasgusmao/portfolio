@@ -13,14 +13,9 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
     <section id="experiences" className="flex flex-col gap-4 scroll-mt-20">
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
-        initial={{ x: -1000, opacity: 0 }}
-        animate={{ x: 0, opacity: 1 }}
-        transition={{
-          type: "spring",
-          duration: 3,
-          stiffness: 40,
-          delay: 0.2,
-        }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
       >
         Experiência
       </motion.h1>
@@ -30,14 +25,9 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
           <motion.div
             key={experience.id}
             className="w-full h-fit bg-black-2 rounded-lg pb-4 flex flex-col gap-3 sm:w-2/3"
-            transition={{
-              type: "spring",
-              delay: 0.2,
-              duration: 1.5,
-              stiffness: 40,
-            }}
-            initial={{ x: 1300, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.5 }}
           >
             <div className="flex px-4 justify-between gap-1">
               <h2 className="text-orange font-semibold text-base mt-2 sm:text-xl">
