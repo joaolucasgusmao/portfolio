@@ -13,7 +13,8 @@ import { Experiences as ExperiencesTypes } from "@/types/experiences";
 import { Projects as ProjectsTypes } from "@/types/projects";
 import { GetServerSideProps } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { PacmanLoader } from "react-spinners";
 
 interface HomeProps {
   projectsData: ProjectsTypes[];
@@ -23,6 +24,20 @@ interface HomeProps {
 
 const Home = ({ projectsData, experiencesData, aboutMeData }: HomeProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsLoading(false), 1500);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <PacmanLoader color="#eb4432" loading={isLoading} size={20} />
+      </div>
+    );
+  }
 
   return (
     <>
