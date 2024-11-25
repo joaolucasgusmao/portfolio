@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
 import { PacmanLoader } from "react-spinners";
-import AboutMe from "@/components/AboutMe";
+import About from "@/components/About";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -45,7 +45,7 @@ const Home = ({ projectsData, experiencesData, aboutData }: HomeProps) => {
 
       <Header isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <main className="flex justify-center items-center mx-8 mt-28 mb-12 flex-col gap-12 sm:gap-20">
-        <AboutMe aboutMe={aboutData} />
+        <About about={aboutData} />
         <Experiences experiences={experiencesData} />
         <Skills />
         <Projects projects={projectsData} />

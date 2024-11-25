@@ -1,6 +1,6 @@
 "use client";
 
-import { AboutMe as AboutMeTypes } from "@/types/about";
+import { About as AboutMeTypes } from "@/types/about";
 import Image from "next/image";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
@@ -9,12 +9,12 @@ import { IoMailOutline } from "react-icons/io5";
 import Typewriter from "typewriter-effect";
 import { motion } from "framer-motion";
 
-interface AboutMeProps {
-  aboutMe: AboutMeTypes[];
+interface AboutProps {
+  about: AboutMeTypes[];
 }
 
-const AboutMe = ({ aboutMe }: AboutMeProps) => {
-  const { image, name, bio, roles, links } = aboutMe[0];
+const About = ({ about }: AboutProps) => {
+  const { image, name, bio, roles, links } = about[0];
 
   return (
     <section className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-12">
@@ -81,4 +81,4 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
   );
 };
 
-export default AboutMe;
+export default About;
