@@ -18,7 +18,6 @@ const AboutMe = ({ aboutMe }: AboutMeProps) => {
 
   return (
     <section className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-12">
-      {/* Animação de opacidade suave para a imagem e o nome */}
       <motion.div
         className="flex flex-col items-center"
         initial={{ opacity: 0 }}
