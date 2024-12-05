@@ -1,6 +1,6 @@
 const experiencesApi = async () => {
   const response = await fetch(
-    "https://gist.githubusercontent.com/joaolucasgusmao/125506d06aac84e58feb6095e4fd8596/raw/942ac1391eb4dbd0497ebb19aa01efc91f77b5eb/experiences.json"
+    "https://gist.githubusercontent.com/joaolucasgusmao/125506d06aac84e58feb6095e4fd8596/raw/157db7bc3a3f92ffa17e93a39dc068393338eb8e/experiences.json"
   );
 
   if (!response.ok) {
