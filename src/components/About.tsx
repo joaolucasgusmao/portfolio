@@ -59,9 +59,14 @@ const About = ({ about }: AboutProps) => {
         transition={{ duration: 1.3 }}
       >
         <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
-          {bio}
+          Sou um desenvolvedor apaixonado por tecnologia e inovação, com quase
+          um ano de experiência profissional na área.
         </p>
-
+        <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
+          Atualmente, estou cursando Análise e Desenvolvimento de Sistemas na
+          Uninter e tenho trabalhado com tecnologias como React.js, Next.js,
+          Node.js, PHP e Laravel para criar soluções escaláveis e inovadoras.
+        </p>
         <div className="flex flex-row gap-4">
           <a target="_blank" href={links.linkedin}>
             <FaLinkedin className="text-white-1 text-2xl sm:text-3xl cursor-pointer transition-colors duration-500 hover:text-orange" />
