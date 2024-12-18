@@ -1,5 +1,6 @@
 import { Skills } from "@/types/skills";
 import {
+  FaBootstrap,
   FaCss3Alt,
   FaDocker,
   FaGithub,
@@ -86,20 +87,27 @@ const skills: Skills[] = [
     icon: SiJquery,
     color: "#0769AD",
   },
+
   {
     id: 13,
+    name: "Bootstrap",
+    icon: FaBootstrap,
+    color: "#6F2CF4",
+  },
+  {
+    id: 14,
     name: "Docker",
     icon: FaDocker,
     color: "#0894E3",
   },
   {
-    id: 14,
+    id: 15,
     name: "Git",
     icon: FaGithub,
     color: "#100000",
   },
   {
-    id: 15,
+    id: 16,
     name: "PostgreSQL",
     icon: BiLogoPostgresql,
     color: "#316192",
