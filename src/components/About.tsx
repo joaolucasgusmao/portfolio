@@ -14,7 +14,7 @@ interface AboutProps {
 }
 
 const About = ({ about }: AboutProps) => {
-  const { image, name, bio, roles, links } = about[0];
+  const { image, name, roles, links } = about[0];
 
   return (
     <section className="flex flex-col items-center sm:flex-row sm:justify-center sm:gap-12">
@@ -25,11 +25,11 @@ const About = ({ about }: AboutProps) => {
         transition={{ duration: 1.3 }}
       >
         <Image
-          className="rounded-full w-44 h-52 sm:w-60 sm:h-72"
+          className="rounded-full w-52 h-52 sm:w-60 sm:h-60"
           src={image}
           alt={`Foto de perfil de ${name}`}
           width={720}
-          height={1226}
+          height={900}
           priority
         />
 
@@ -53,7 +53,7 @@ const About = ({ about }: AboutProps) => {
       </motion.div>
 
       <motion.div
-        className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12"
+        className="flex flex-col items-center mt-2 gap-4 sm:w-1/3 sm:mt-12 lg:m-0"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1.3 }}

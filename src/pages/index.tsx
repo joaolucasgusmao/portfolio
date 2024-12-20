@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Head from "next/head";
-import { PacmanLoader } from "react-spinners";
+import { PulseLoader } from "react-spinners";
 import About from "@/components/About";
 import Experiences from "@/components/Experiences";
 import Footer from "@/components/Footer";
@@ -32,7 +32,7 @@ const Home = ({ projectsData, experiencesData, aboutData }: HomeProps) => {
   if (isLoading) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <PacmanLoader color="#eb4432" loading={isLoading} size={20} />
+        <PulseLoader color="#eb4432" loading={isLoading} size={10} />
       </div>
     );
   }
