@@ -52,7 +52,7 @@ const Education = ({ educations }: EducationProps) => {
                   <p className="text-white-1 font-semibold text-sm">
                     {education.course}
                   </p>
-                  <span className="text-gray-1 font-semibold text-sm">
+                  <span className="text-white-1 font-semibold text-sm">
                     {education.period}
                   </span>
                 </div>
