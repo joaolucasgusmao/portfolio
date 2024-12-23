@@ -45,14 +45,14 @@ const Education = ({ educations }: EducationProps) => {
                 <div className="flex gap-1 flex-col pr-4">
                   <a
                     href={education.link}
-                    className="text-base font-semibold text-orange cursor-pointer"
+                    className="text-base sm:text-xl font-semibold text-orange cursor-pointer"
                   >
                     {education.institution}
                   </a>
-                  <p className="text-white-1 font-semibold text-sm">
+                  <p className="text-white-1 font-medium text-sm sm:text-base">
                     {education.course}
                   </p>
-                  <span className="text-white-1 font-semibold text-sm">
+                  <span className="text-white-1 font-medium text-sm">
                     {education.period}
                   </span>
                 </div>
