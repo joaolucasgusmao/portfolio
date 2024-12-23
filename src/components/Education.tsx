@@ -1,8 +1,12 @@
-import EducationData from "@/data/education";
+import { Education as EducationTypes } from "@/types/education";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const Education = () => {
+interface EducationProps {
+  educations: EducationTypes[];
+}
+
+const Education = ({ educations }: EducationProps) => {
   return (
     <section
       id="education"
@@ -24,9 +28,12 @@ const Education = () => {
         transition={{ duration: 0.5 }}
         viewport={{ amount: 0.2 }}
       >
-        {EducationData.map((education) => {
+        {educations.map((education) => {
           return (
-            <li className="flex justify-start flex-col gap-2 pl-1 md:">
+            <li
+              key={education.id}
+              className="flex justify-start flex-col gap-2 pl-1"
+            >
               <div className="flex items-center justify-start gap-3">
                 <Image
                   src={education.image}

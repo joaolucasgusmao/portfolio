@@ -4,6 +4,5 @@ export interface Education {
   institution: string;
   course: string;
   link: string;
-  description?: string;
   period: string;
 }
