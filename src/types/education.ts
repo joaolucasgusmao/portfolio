@@ -2,7 +2,8 @@ export interface Education {
   id: number;
   image: string;
   institution: string;
-  name: string;
-  description: string;
+  course: string;
+  link: string;
+  description?: string;
   period: string;
 }

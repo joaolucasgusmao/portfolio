@@ -10,7 +10,7 @@ interface ExperiencesProps {
 
 const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
-    <section id="experiences" className="flex flex-col gap-4 scroll-mt-20">
+    <section id="experiences" className="w-full flex flex-col gap-4 scroll-mt-2 sm:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3">
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ opacity: 0 }}
@@ -20,11 +20,11 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
         Experiência
       </motion.h1>
 
-      <div className="flex flex-col gap-8 items-center">
+      <div className="w-full flex flex-col gap-8 items-center">
         {experiences.map((experience) => (
           <motion.div
             key={experience.id}
-            className="w-full h-fit bg-black-2 rounded-lg pb-4 flex flex-col gap-3 sm:w-2/3"
+            className="w-full h-fit bg-black-2 rounded-lg pb-4 flex flex-col gap-3"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.3 }}
