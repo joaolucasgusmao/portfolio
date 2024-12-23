@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full h-14 bg-black-1 flex justify-between items-center px-6 border-t-2 border-gray-1 sm:px-24">
+    <footer className="w-full h-14 bg-black-1 flex justify-between items-center px-6 border-t-2 border-gray-2 sm:px-24">
       <p className="text-sm text-white-1 font-medium sm:text-lg">
         Feito com ♥︎{" "}
         <a

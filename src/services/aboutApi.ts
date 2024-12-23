@@ -1,6 +1,6 @@
 const aboutApi = async () => {
   const response = await fetch(
-    "https://gist.githubusercontent.com/joaolucasgusmao/b932c05931dbfea0c38d22dd61e4ace1/raw/5ce7c8519a89c3e68ed54d189381dea62e4da5ab/about.json"
+    "https://gist.githubusercontent.com/joaolucasgusmao/b932c05931dbfea0c38d22dd61e4ace1/raw/db44fb3e15e926e25b6679ecb8d41acdd44c33d3/about.json"
   );
 
   if (!response.ok) {
