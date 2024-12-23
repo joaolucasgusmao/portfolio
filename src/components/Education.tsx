@@ -45,6 +45,7 @@ const Education = ({ educations }: EducationProps) => {
                 <div className="flex gap-1 flex-col pr-4">
                   <a
                     href={education.link}
+                    target="_blank"
                     className="text-base sm:text-xl font-semibold text-orange cursor-pointer"
                   >
                     {education.institution}
