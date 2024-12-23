@@ -27,7 +27,7 @@ const Projects = ({ projects }: ProjectsProps) => {
         {projects.map((project) => {
           return (
             <motion.li
-              className="w-full h-fit bg-black-2 pb-4 flex flex-col rounded-lg gap-4 sm:w-2/3 lg:w-full"
+              className="w-full h-fit bg-black-2 pb-4 flex flex-col rounded-lg gap-1 sm:w-2/3 lg:w-full"
               key={project.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -58,7 +58,7 @@ const Projects = ({ projects }: ProjectsProps) => {
                   </a>
                 </div>
               </div>
-              <p className="text-white-1 text-sm text-left mx-4 font-medium sm:text-base">
+              <p className="text-white-1 text-sm text-left mx-4 font-medium pb-1 sm:text-base">
                 {project.description}
               </p>
               <div className="flex flex-col gap-2 mx-4 border-t-2 border-gray-2">
