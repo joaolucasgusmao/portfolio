@@ -56,6 +56,12 @@ const Header = ({
         </a>
         <a
           className="text-orange  text-lg font-semibold cursor-pointer"
+          onClick={() => scrollToSection("education")}
+        >
+          Formação
+        </a>
+        <a
+          className="text-orange  text-lg font-semibold cursor-pointer"
           onClick={() => scrollToSection("skills")}
         >
           Skills
