@@ -40,20 +40,20 @@ const Education = ({ educations }: EducationProps) => {
                   alt="Logo da instituição"
                   width={300}
                   height={300}
-                  className="w-20 h-auto object-contain"
+                  className="w-16 h-auto object-contain"
                 />
-                <div className="flex gap-1 flex-col pr-4">
+                <div className="flex flex-col pr-4 text-left">
                   <a
                     href={education.link}
                     target="_blank"
-                    className="text-base sm:text-xl font-semibold text-orange cursor-pointer"
+                    className="text-base font-semibold text-orange cursor-pointer"
                   >
                     {education.institution}
                   </a>
-                  <p className="text-white-1 font-medium text-sm sm:text-base">
+                  <p className="text-white-1 font-normal text-sm sm:text-base">
                     {education.course}
                   </p>
-                  <span className="text-white-1 font-medium text-sm">
+                  <span className="text-white-1 font-normal text-sm">
                     {education.period}
                   </span>
                 </div>

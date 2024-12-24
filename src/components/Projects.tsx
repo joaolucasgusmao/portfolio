@@ -40,11 +40,11 @@ const Projects = ({ projects }: ProjectsProps) => {
                   alt="Imagem do projeto"
                   width={1920}
                   height={900}
-                  className="rounded-t-md w-full"
+                  className="rounded-t-lg w-full"
                 />
               )}
               <div className="flex justify-between items-center mx-4 mt-2">
-                <h2 className="text-base text-orange font-semibold sm:text-xl">
+                <h2 className="text-base text-orange font-semibold sm:text-lg">
                   {project.name}
                 </h2>
                 <div className="flex gap-2">

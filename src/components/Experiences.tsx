@@ -30,22 +30,22 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
             transition={{ duration: 1.3 }}
           >
             <div className="flex px-4 justify-between gap-1">
-              <h2 className="text-orange font-semibold text-base mt-2 sm:text-xl">
+              <h2 className="text-orange font-semibold text-base mt-2 sm:text-lg">
                 {experience.role}
               </h2>
 
               <div className="flex flex-row mt-2 items-center gap-1">
                 <a
-                  className="text-white-1 text-sm font-bold cursor-pointer transition-colors duration-500 hover:text-orange sm:text-lg"
+                  className="text-white-1 text-sm font-bold cursor-pointer transition-colors duration-500 hover:text-orange sm:text-base"
                   target="_blank"
                   href={experience.link}
                 >
                   {experience.company}
                 </a>
-                <span className="text-white-1 text-sm font-medium sm:text-lg">
+                <span className="text-white-1 text-sm font-medium sm:text-base">
                   |
                 </span>
-                <span className="text-white-1 text-sm font-medium sm:text-lg">
+                <span className="text-white-1 text-sm font-medium sm:text-base">
                   {experience.period}
                 </span>
               </div>
