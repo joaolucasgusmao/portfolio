@@ -1,6 +1,6 @@
 const projectsApi = async () => {
   const response = await fetch(
-    "https://gist.githubusercontent.com/joaolucasgusmao/c53a9cf62716e984e406db48b3b6b789/raw/aa96e4269473a65ab77327c0dc80b22cc4e5e66c/projects.json"
+    "https://gist.githubusercontent.com/joaolucasgusmao/c53a9cf62716e984e406db48b3b6b789/raw/3c510daf4085629f0966cb411d09cf0a08d8f854/projects.json"
   );
 
   if (!response.ok) {
