@@ -42,7 +42,7 @@ const Education = ({ educations }: EducationProps) => {
                   height={300}
                   className="w-16 h-auto object-contain"
                 />
-                <div className="flex flex-col pr-4 text-left">
+                <div className="flex flex-col text-left">
                   <a
                     href={education.link}
                     target="_blank"
