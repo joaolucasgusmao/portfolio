@@ -1,6 +1,6 @@
 const educationApi = async () => {
   const response = await fetch(
-    "https://gist.githubusercontent.com/joaolucasgusmao/0c587812bc484a02fe1586d2a05b003c/raw/37e7fd787ab4d948a7897ffbb0ba4cfcd37e9acf/education.json"
+    "https://gist.githubusercontent.com/joaolucasgusmao/0c587812bc484a02fe1586d2a05b003c/raw/5a52895001ef1c069914916f827fcfbbca9ad2df/education.json"
   );
 
   if (!response.ok) {
