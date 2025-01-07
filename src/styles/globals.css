@@ -15,7 +15,7 @@ body {
 
 @media (min-width: 1500px) {
   .swiper {
-    width: 60%;
+    width: 70%;
     display: flex !important;
     gap: 0.5rem !important;
   }
