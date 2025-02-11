@@ -13,6 +13,7 @@ import { IoLogoJavascript } from "react-icons/io5";
 import { SiJquery, SiPhp, SiTypescript } from "react-icons/si";
 import { BiLogoPostgresql, BiLogoSass } from "react-icons/bi";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
+import { GrMysql } from "react-icons/gr";
 
 const skills: Skills[] = [
   {
@@ -41,7 +42,7 @@ const skills: Skills[] = [
   },
   {
     id: 5,
-    name: "React.js",
+    name: "React",
     icon: FaReact,
     color: "#61DAFB",
   },
@@ -111,6 +112,13 @@ const skills: Skills[] = [
     name: "PostgreSQL",
     icon: BiLogoPostgresql,
     color: "#316192",
+  },
+
+  {
+    id: 17,
+    name: "MySQL",
+    icon: GrMysql,
+    color: "#4479A1",
   },
 ];
 
