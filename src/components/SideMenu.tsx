@@ -28,7 +28,7 @@ const SideMenu = ({
           className="w-full py-2 pl-4 text-white-1  text-sm font-semibold transition-colors duration-500 hover:text-orange hover:bg-black-2"
           target="_blank"
           onClick={() => setIsMenuOpen(false)}
-          href="https://drive.google.com/file/d/1EQrumzuFRHOCkCbgrE2xDquj70j3TAck/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1XROfeO8C1INqBK7HPyYWWJj8m7-6ZcfT/view?usp=drive_link"
         >
           Meu CV
         </a>

@@ -44,7 +44,7 @@ const Header = ({
         <a
           className="text-orange  text-lg font-semibold cursor-pointer"
           target="_blank"
-          href="https://drive.google.com/file/d/1M2Ldo6AYLhVoDvW0180jpsryIojq0bRb/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1XROfeO8C1INqBK7HPyYWWJj8m7-6ZcfT/view?usp=drive_link"
         >
           Meu CV
         </a>
