@@ -10,7 +10,10 @@ interface ExperiencesProps {
 
 const Experiences = ({ experiences }: ExperiencesProps) => {
   return (
-    <section id="experiences" className="w-full flex flex-col gap-4 scroll-mt-20 sm:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3">
+    <section
+      id="experiences"
+      className="w-full flex flex-col gap-4 scroll-mt-20 sm:w-2/3 lg:w-1/2 xl:w-2/5 2xl:w-1/3"
+    >
       <motion.h1
         className="text-center text-white-1 font-bold text-2xl"
         initial={{ opacity: 0 }}
@@ -42,10 +45,10 @@ const Experiences = ({ experiences }: ExperiencesProps) => {
                 >
                   {experience.company}
                 </a>
-                <span className="text-white-1 text-sm font-medium sm:text-base">
+                <span className="hidden sm:block text-white-1 text-sm font-medium sm:text-base">
                   |
                 </span>
-                <span className="text-white-1 text-sm font-medium sm:text-base">
+                <span className="hidden sm:block text-white-1 text-sm font-medium sm:text-base">
                   {experience.period}
                 </span>
               </div>

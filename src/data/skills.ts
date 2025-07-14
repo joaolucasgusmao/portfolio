@@ -83,19 +83,6 @@ const skills: Skills[] = [
     color: "#FF2D20",
   },
   {
-    id: 12,
-    name: "jQuery",
-    icon: SiJquery,
-    color: "#0769AD",
-  },
-
-  {
-    id: 13,
-    name: "Bootstrap",
-    icon: FaBootstrap,
-    color: "#6F2CF4",
-  },
-  {
     id: 14,
     name: "Docker",
     icon: FaDocker,
