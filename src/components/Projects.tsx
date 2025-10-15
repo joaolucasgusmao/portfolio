@@ -39,8 +39,8 @@ const Projects = ({ projects }: ProjectsProps) => {
                   src={project.image}
                   alt="Imagem do projeto"
                   width={1920}
-                  height={900}
-                  className="rounded-t-lg w-full"
+                  height={1080}
+                  className="rounded-t-lg w-full h-fit"
                 />
               )}
               <div className="flex justify-between items-center mx-4 mt-2">

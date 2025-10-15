@@ -64,8 +64,7 @@ const About = ({ about }: AboutProps) => {
         </p>
         <p className="text-white-1 text-sm w-full text-left font-medium sm:text-lg">
           Atualmente, estou cursando Análise e Desenvolvimento de Sistemas e
-          tenho trabalhado com tecnologias como PHP, Laravel, React, Next.js e
-          Node.js para criar soluções escaláveis e inovadoras.
+          tenho trabalhado com tecnologias como PHP, Laravel, React e Next.js para criar soluções escaláveis e inovadoras.
         </p>
         <div className="flex flex-row gap-4">
           <a target="_blank" href={links.linkedin}>
