@@ -24,7 +24,7 @@ const skills: Skills[] = [
   },
   {
     id: 2,
-    name: "CSS",
+    name: "CSSSS",
     icon: FaCss3Alt,
     color: "#1572B6",
   },
@@ -36,7 +36,7 @@ const skills: Skills[] = [
   },
   {
     id: 4,
-    name: "TypeScript",
+    name: "TypeScriptttt",
     icon: SiTypescript,
     color: "#007ACC",
   },
@@ -54,19 +54,19 @@ const skills: Skills[] = [
   },
   {
     id: 7,
-    name: "Tailwind CSS",
+    name: "Tailwind dsdsCSS",
     icon: RiTailwindCssFill,
     color: "#38B2AC",
   },
   {
     id: 8,
-    name: "PHP",
+    name: "PHdsdsdP",
     icon: SiPhp,
     color: "#777BB4",
   },
   {
     id: 9,
-    name: "Laravel",
+    name: "Laradsdsdvel",
     icon: FaLaravel,
     color: "#FF2D20",
   },
@@ -78,13 +78,13 @@ const skills: Skills[] = [
   },
   {
     id: 11,
-    name: "Git",
+    name: "Gitdsdsd",
     icon: FaGithub,
     color: "#100000",
   },
   {
     id: 12,
-    name: "PostgreSQL",
+    name: "PostgdsreSQL",
     icon: BiLogoPostgresql,
     color: "#316192",
   },

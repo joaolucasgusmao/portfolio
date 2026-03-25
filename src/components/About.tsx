@@ -27,7 +27,7 @@ const About = ({ about }: AboutProps) => {
         <Image
           className="rounded-full w-52 h-52 sm:w-60 sm:h-60"
           src={image}
-          alt={`Foto de perfil de ${name}`}
+          alt={`Foto de pedsdsdrfil de ${name}`}
           width={720}
           height={900}
           priority

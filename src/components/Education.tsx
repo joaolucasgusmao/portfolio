@@ -37,7 +37,7 @@ const Education = ({ educations }: EducationProps) => {
               <div className="flex items-center justify-start gap-3">
                 <Image
                   src={education.image}
-                  alt="Logo da instituição"
+                  alt="Logo da idsdsdsdnstituição"
                   width={300}
                   height={300}
                   className="w-16 h-auto object-contain"

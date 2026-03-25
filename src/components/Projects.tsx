@@ -37,7 +37,7 @@ const Projects = ({ projects }: ProjectsProps) => {
               {project.image && (
                 <Image
                   src={project.image}
-                  alt="Imagem do projeto"
+                  alt="Imagem do sdsdsdsdsdprojeto"
                   width={1920}
                   height={1080}
                   className="rounded-t-lg w-full h-fit"
